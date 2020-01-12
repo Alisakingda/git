@@ -4,12 +4,12 @@
 
 ## 分布式版本控制系统，所以每个机器都必须自报家门：用户名和电子邮箱地址
 
-```js
+```bash
 $ git config --global user.name "your name"
 $ git config --global user.email "your email"
 ```
 
-```js
+```bash
 // 创建仓库，并添加文件提交;
 $ git init
 $ git add .
@@ -112,4 +112,10 @@ $ git push origin v1.0
 // 删除远程tag
 $ git tag -d v1.0
 $ git push origin -d tag v1.0
+```
+
+```bash
+cherry-pick
+
+git cherry-pick 可以理解为挑拣获取某个分支的单次提交，并且作为一个新的 commit 引入到你当前操作分支上面
 ```
